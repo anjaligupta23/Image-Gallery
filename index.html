@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+      <h1>Discover a stunning AI-generated animals image gallery</h1>
+      <div class="ful-img" id="fulImgBox">
+        <img src="bird.webp" alt="" id="fulImg">
+        <span onclick="closefulImg()">X</span>
+  
+      </div> 
+      <div class="img-gallery">
+        <img src="bird.webp" alt="image1" onclick="openfulImg(this.src)">
+        <img src="cat.webp" alt="image2" onclick="openfulImg(this.src)">
+        <img src="dog.webp" alt="image3" onclick="openfulImg(this.src)">
+        <img src="dino.png" alt="image4" onclick="openfulImg(this.src)">
+        <img src="dog2.webp" alt="image5" onclick="openfulImg(this.src)">
+        <img src="elephant.jpg" alt="image6" onclick="openfulImg(this.src)">
+        <img src="cato.png" alt="image7" onclick="openfulImg(this.src)">
+        <img src="tiger1.webp" alt="image8" onclick="openfulImg(this.src)">
+        <img src="tiger.webp" alt="image9" onclick="openfulImg(this.src)">
+      </div>
+    </div>
+<script>
+  var fulImgBox = document.getElementById("fulImgBox");
+  var fulImg = document.getElementById("fulImg");
+
+  function openfulImg(pic){
+    fulImgBox.style.display="flex";
+    fulImg.src = pic;
+  }
+  function closefulImg(){
+    fulImgBox.style.display="none";
+  }
+
+
+</script>  
+</body>
+</html>
